@@ -67,11 +67,11 @@ public class MainActivity extends AppCompatActivity {
                             {
                                 if(heightInInches>108)
                                 {
-                                    Result.setText("Height could not be more than 9foot");
+                                    Result.setText("Height could not be more than 9 foot");
                                 }
                                 else
                                 {
-                                    Result.setText("Height could not be less than 3foot");
+                                    Result.setText("Height could not be less than 3 foot");
                                 }
                             }
                             if (wt >650 || wt<10)
