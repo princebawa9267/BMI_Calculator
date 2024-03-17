@@ -14,21 +14,28 @@
         android:orientation="horizontal"
         android:layout_margin="10dp"
         android:padding="10dp">
-
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter your height : "
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:textStyle="italic"/>
         <EditText
             android:id="@+id/Height"
-            android:layout_width="244dp"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Enter your height in feet"
+            android:hint="in foot"
             android:textColor="@color/black"
-            android:textColorHint="#201F1F"
+            android:textColorHint="#6A6363"
             android:inputType="number" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="."
-            android:textColor="@color/black"/>
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
         <EditText
             android:id="@+id/Heightinch"
             android:layout_width="match_parent"
@@ -36,22 +43,32 @@
             android:ems="10"
             android:hint="Inches"
             android:textColor="@color/black"
-            android:textColorHint="#201F1F"
+            android:textColorHint="#6A6363"
             android:inputType="number">
         </EditText>
     </LinearLayout>
-
-    <EditText
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter your weight in kg"
-        android:ems="10"
-        android:padding="10dp"
-        android:id="@+id/Weight"
-        android:layout_margin="20dp"
-        android:textColor="@color/black"
-        android:textColorHint="#201F1F"
-        android:inputType="number"/>
+        android:layout_margin="10dp"
+        android:padding="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter your weight : "
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:textStyle="italic" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="in kg"
+            android:ems="10"
+            android:id="@+id/Weight"
+            android:textColor="@color/black"
+            android:textColorHint="#6A6363"
+            android:inputType="number"/>
+    </LinearLayout>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -63,6 +80,7 @@
         android:layout_height="wrap_content"
         android:text="Let's test your BMI"
         android:textColor="@color/black"
+        android:textStyle="bold"
         android:textSize="20dp"
         android:layout_marginTop="20dp"
         android:id="@+id/Result"/>
