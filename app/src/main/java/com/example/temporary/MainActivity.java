@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
                                     Result.setText("Height could not be less than 3 foot");
                                 }
                             }
-                            if (wt >650 || wt<10)
+                            if (wt >650 || wt<20)
                             {
                                 if (wt>650)
                                 {
@@ -82,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
                                 }
                                 else
                                 {
-                                    Result.setText("Weight could not be less than 10kg");
+                                    Result.setText("Weight could not be less than 20kg");
                                 }
                             }
                             BMI_image.setImageResource(R.drawable.bmi);
