@@ -62,7 +62,29 @@ public class MainActivity extends AppCompatActivity {
                         int heightInInches = ht*12 + inch;
                         if((heightInInches>108 || heightInInches<36) || (wt >650 || wt<10))
                         {
-                            Result.setText("Invalid Input");
+
+                            if(heightInInches>108 || heightInInches<36)
+                            {
+                                if(heightInInches>108)
+                                {
+                                    Result.setText("Height could not be more than 9foot");
+                                }
+                                else
+                                {
+                                    Result.setText("Height could not be less than 3foot");
+                                }
+                            }
+                            if (wt >650 || wt<10)
+                            {
+                                if (wt>650)
+                                {
+                                    Result.setText("Weight could not be more than 650kg");
+                                }
+                                else
+                                {
+                                    Result.setText("Weight could not be less than 10kg");
+                                }
+                            }
                             BMI_image.setImageResource(R.drawable.bmi);
                         }
                         else {
